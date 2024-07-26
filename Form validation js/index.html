@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register and Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Register Here</h2>
+        </div>
+        <div id="REGISTERFORM">
+            <form id="registerForm" class="form">
+                <div class="form-control">
+                    <label for="txtUserName">User Name:</label>
+                    <input id="txtUserName" type="text" name="username"/>
+               
+                </div>
+                <div class="form-control">
+                    <label for="txtemail">Email:</label>
+                    <input id="txtemail" type="email" placeholder="enter your email" name="email"/>
+                    
+                </div>
+                <div class="form-control">
+                    <label for="txtpwd">Password:</label>
+                    <input id="txtpwd" type="password" name="password"/>
+                 
+                </div>
+                <div class="form-control">
+                    <label for="txtconpwd">Confirm Password:</label>
+                    <input id="txtconpwd" type="password" name="conpwd"/>
+                    
+                </div>
+                <div class="form-control">
+                    <button id="registerBtn">Register</button>
+                </div>
+            </form>
+            <div class="botto">
+                <button onclick="logintrue()">already have an account</button>
+            </div>
+        </div>
+        
+        <div id="LOGINFORM" style="display:none;">
+            <form id="loginForm" class="form">
+                <div class="form-control">
+                    <label for="txtemailLogin">Email:</label>
+                    <input id="txtemailLogin" type="email" name="email"/>
+                 
+                </div>
+                <div class="form-control">
+                    <label for="txtpwdLogin">Password:</label>
+                    <input id="txtpwdLogin" type="password" name="password"/>
+                  
+                </div>
+                <div class="form-control">
+                    <button id="loginBtn">Login</button>
+                </div>
+            </form>
+            <button onclick="loginflase()">does have an account</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
